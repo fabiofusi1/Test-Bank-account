@@ -1,8 +1,8 @@
 curl --cacert external-api.mediobancapremier.io.pem \
   --cert tpp-qwac.crt --key tpp-qwac.key \
   -X GET \
-  -H 'Date: Tue, 20 Aug 2019 10:17:38 GMT' \
-  -H 'Postman-Token: 4c89fe1c-6b93-41df-a7d0-1a372bc4fa95' \
+  -H 'Date: Tue, 11 apr 2024 10:17:38 GMT' \
+  -H 'Postman-Token:A_fICtTD83syL8pAuKIXoNRQX_H2SYuab6Ss0iCWhm8' \
   -H 'Signature: keyId="<TPP_APP_NAME>",algorithm="rsa-sha256",headers="(request-target) tpp-request-id date",signature="mg2w72PImUPBEb4KYQP7AM5LW/NXTezGQu8n+oWEy7QU8vvO707+t24eNEAortQZ0h71rKSZCyhu6qCPN3WLFX/SFEk5tWwV6K8azN6Jm6ORalux6s9ZVqcxYNr4tQCDEdaqKlfFkrHSYqEoIYqYBEzzqggIOnVaLvaQUbxk1RceneivDUMEwzZKKPb3ZEm/DT54tyS3+qUohW38XcwtHtDSGNQVqNaDf06igNqTZKsP7rbAg4IwkcbZuq2N1NOrogpsBQ3XhHBZCnXxaxagFEdHcol1BmWzZL5h0Uxf0qnjGez+5DKbYoTGnskJoG/Dc78dJiBlIHKKTrEFFtyZJiWNJSQd/Cbx/zfAI7xjjF15cfUn2NP3zmV0ykSvKmaPQJWp5MpzWluQ7g9/+58nD4XpR4ULVgTIdIDjo+F2BLPGD3/xZwB+W3DM75Vr9zK6+i2bnVEpyb3JV5ZdNQ/qWrpREAuxYQvmpt6kLiTBCLjqxWlzh6LLMZEYuHaY1IXQq9/xpSJ9SACKQUyOqMAQNSc6i7dfVRbvSZTfCHtWUdPIxveBuLnHEl9qqxjnd8ZX2XR6njLV2TLwgHGJW04KhyS15fZ3SMIrxSNmSVZQN68PCbOD86TONsIbtRZJSYdR6bo9ndcKVMcuQMOY/iKxiKmCokdTmNkIwBuz6bTxIlI="' \
   -H 'TPP-Request-ID: 3006ef78-8b31-467a-b97e-2f8481004a01' \
   'https://external-api.mediobancapremier.io/auth/oauth/v2/authorize?response_type=code&client_id=<CLIENT_ID>&redirect_uri=<CALLBACK_URL>&state=<YOUR_OPTIONAL_STATE>'
