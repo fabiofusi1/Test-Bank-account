@@ -1,8 +1,15 @@
 curl --cacert external-api.mediobancapremier.io.pem \
   --cert tpp-qwac.crt --key tpp-qwac.key \
-  -X GET \
-  -H 'Date: Tue, 11 apr 2024 10:17:38 GMT' \
-  -H 'Postman-Token:A_fICtTD83syL8pAuKIXoNRQX_H2SYuab6Ss0iCWhm8' \
-  -H 'Signature: keyId="<TPP_APP_NAME>",algorithm="rsa-sha256",headers="(request-target) tpp-request-id date",signature="mg2w72PImUPBEb4KYQP7AM5LW/NXTezGQu8n+oWEy7QU8vvO707+t24eNEAortQZ0h71rKSZCyhu6qCPN3WLFX/SFEk5tWwV6K8azN6Jm6ORalux6s9ZVqcxYNr4tQCDEdaqKlfFkrHSYqEoIYqYBEzzqggIOnVaLvaQUbxk1RceneivDUMEwzZKKPb3ZEm/DT54tyS3+qUohW38XcwtHtDSGNQVqNaDf06igNqTZKsP7rbAg4IwkcbZuq2N1NOrogpsBQ3XhHBZCnXxaxagFEdHcol1BmWzZL5h0Uxf0qnjGez+5DKbYoTGnskJoG/Dc78dJiBlIHKKTrEFFtyZJiWNJSQd/Cbx/zfAI7xjjF15cfUn2NP3zmV0ykSvKmaPQJWp5MpzWluQ7g9/+58nD4XpR4ULVgTIdIDjo+F2BLPGD3/xZwB+W3DM75Vr9zK6+i2bnVEpyb3JV5ZdNQ/qWrpREAuxYQvmpt6kLiTBCLjqxWlzh6LLMZEYuHaY1IXQq9/xpSJ9SACKQUyOqMAQNSc6i7dfVRbvSZTfCHtWUdPIxveBuLnHEl9qqxjnd8ZX2XR6njLV2TLwgHGJW04KhyS15fZ3SMIrxSNmSVZQN68PCbOD86TONsIbtRZJSYdR6bo9ndcKVMcuQMOY/iKxiKmCokdTmNkIwBuz6bTxIlI="' \
-  -H 'TPP-Request-ID: 3006ef78-8b31-467a-b97e-2f8481004a01' \
-  'https://external-api.mediobancapremier.io/auth/oauth/v2/authorize?response_type=code&client_id=<CLIENT_ID>&redirect_uri=<CALLBACK_URL>&state=<YOUR_OPTIONAL_STATE>'
+  -X POST \
+  -H 'Date: Tue, 20 Aug 2019 10:18:04 GMT' \
+  -H 'Digest: SHA-256=UCiwgJXql+GKnCx3im0bs58j6sEQUxPfnvJEeBgaF/Q=' \
+  -H 'Postman-Token: 7254f980-23a6-4429-806a-4fc79ddc3157' \
+  -H 'Signature: keyId="<TEST_TEST2>",algorithm="rsa-sha256",headers="(request-target) digest tpp-request-id date",signature="K5Pb/mQ0S2ye8jBQZq73bR6mgmxVeIfdcXbRxFVxFcrzstvnm2Ju+96A2fcWshSsfYKnB3uuhm2rStwvROBjhnhdFGxPj/eYP+GXzNj3BmxNQTXMJtYFnjLGdOuVW1tNczlaOhus7dhumiKs/EttEwzTQJjVAEAHwJykuS7UjzBpKUJyFy3aXhrftAj9Jds0alrx7C6X5Md33sGB1Sa/CCJeCxSHNaaTFXzjwi5ILbqMR2ShRpn8eVPn3lpmKBJCVKMoWY/KjwhEtnVwL2rKzvko5zAVANDlEvnSGd5Hpvw4vg1Qpl84LpUhllJK2u6MhnwN9N6u4/qwW0yLwL6e6P1v09WW9wYfy2/jwgEzQAUORl5DfqKN5UoCR8Vmmju8XBugItYRm4BekorRmJab1v//6W9cqJpjG/mLiay3tbf28Hwm6UezdqkeSVMOpKpDu+2PR5uEvNinrBrHT9ha+f+VDfoSlzu/7uEvL5oeucpahVJ10w2E6DTjYBIMsm9Oax4YoXCL2gvz9Wd7RoqvIn6qrQ2cqVE7v3pF5RhDnd9kLDy7L+2e5U2tWHEwNhTszOP7Oigr2CSDeaCxX7Xp7744iGYV1YfHOILkdR/xNXebjdB4U4+FzhDWPjiYrMmsDbTQRPLbiUnk3R08e8qEp+ooaLlw6j4MFhmThjHuZ7s="' \
+  -H 'TPP-Request-ID: 71f362d4-21b2-4669-95c2-baa5e1770901' \
+  https://external-api.mediobancapremier.io/auth/oauth/v2/token \
+  -H 'content-type: application/json' \
+  -d '{
+    "client_id":"A_fICtTD83syL8pAuKIXoNRQX_H2SYuab6Ss0iCWhm",
+    "client_secret":"TE1yiKNeyQl0pPMn8iD8bwuPk9LbWMxRCmqeWFyIy4w",
+    "grant_type":"client_credentials"
+    }'
