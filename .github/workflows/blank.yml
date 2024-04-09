@@ -1,7 +1,6 @@
 curl --cacert external-api.mediobancapremier.io.pem \
   --cert tpp-qwac.crt --key tpp-qwac.key \
   -X POST \
-  -H 'Date: Tue, 20 Aug 2019 10:18:04 GMT' \
   -H 'Digest: SHA-256=UCiwgJXql+GKnCx3im0bs58j6sEQUxPfnvJEeBgaF/Q=' \
   -H 'Postman-Token: 7254f980-23a6-4429-806a-4fc79ddc3157' \
   -H 'Signature: keyId="<TEST_TEST2>",algorithm="rsa-sha256",headers="(request-target) digest tpp-request-id date",signature="K5Pb/mQ0S2ye8jBQZq73bR6mgmxVeIfdcXbRxFVxFcrzstvnm2Ju+96A2fcWshSsfYKnB3uuhm2rStwvROBjhnhdFGxPj/eYP+GXzNj3BmxNQTXMJtYFnjLGdOuVW1tNczlaOhus7dhumiKs/EttEwzTQJjVAEAHwJykuS7UjzBpKUJyFy3aXhrftAj9Jds0alrx7C6X5Md33sGB1Sa/CCJeCxSHNaaTFXzjwi5ILbqMR2ShRpn8eVPn3lpmKBJCVKMoWY/KjwhEtnVwL2rKzvko5zAVANDlEvnSGd5Hpvw4vg1Qpl84LpUhllJK2u6MhnwN9N6u4/qwW0yLwL6e6P1v09WW9wYfy2/jwgEzQAUORl5DfqKN5UoCR8Vmmju8XBugItYRm4BekorRmJab1v//6W9cqJpjG/mLiay3tbf28Hwm6UezdqkeSVMOpKpDu+2PR5uEvNinrBrHT9ha+f+VDfoSlzu/7uEvL5oeucpahVJ10w2E6DTjYBIMsm9Oax4YoXCL2gvz9Wd7RoqvIn6qrQ2cqVE7v3pF5RhDnd9kLDy7L+2e5U2tWHEwNhTszOP7Oigr2CSDeaCxX7Xp7744iGYV1YfHOILkdR/xNXebjdB4U4+FzhDWPjiYrMmsDbTQRPLbiUnk3R08e8qEp+ooaLlw6j4MFhmThjHuZ7s="' \
